@@ -39,17 +39,18 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   Category.update({
-    category: req.body.category_name
+    category_name: req.body.category_name
   },
-  {
+  { 
     where: {
       id: req.params.id
     }
   }).then(dbCategory =>{
     if (!dbCategory) {
-      return res.status(404).json({message: 'not found'});
+      res.status(404).json({message: 'not found'})
+      return ;
     } 
-    return res.json(dbCategory);
+    res.json(dbCategory);
   })
   // update a category by its `id` value
 });
@@ -61,9 +62,10 @@ router.delete('/:id', (req, res) => {
     }
   }).then(dbCategory =>{
     if (!dbCategory) {
-      return res.status(404).json({message: 'not found'});
+      res.status(404).json({message: 'not found'})
+      return ;
     } 
-    return res.json(dbCategory);
+    res.json(dbCategory);
   })
   // delete a category by its `id` value
 });

@@ -15,17 +15,12 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   Category.findOne({
-    include: [Product]
-  },
-  {
+    include: [Product],
     where: {
       id: req.params.id
     }
   }).then(dbCategory =>{
-    if (!dbCategory) {
-      return res.status(404).json({message: 'not found'});
-    } 
-    return res.json(dbCategory);
+    res.json(dbCategory);
   })
   // find one category by its `id` value
   // be sure to include its associated Products

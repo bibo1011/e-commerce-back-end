@@ -32,9 +32,13 @@
   
   
   Walkthrough Videos:
+
   MySQL source schema  https://drive.google.com/file/d/1d7HtrDMGLMAchobzyvk19R0sS7W21ddh/view
+
   npm run seed and npm start https://drive.google.com/file/d/1LkbkD6Q6UUZlYRQyERpsDgRyq2SXWW22/view
+
   Insomia Core testing https://drive.google.com/file/d/10dcq5wCVnAP3fFMi6fJQXnh2HZvPufRS/view
+
 
   ## *Credits*
    

@@ -28,7 +28,13 @@
 
   ## *Usage*
    
-  Go to MySQL shell CLI: run "mysql -u root -p". type "source schema.sql;" to create db. Exit MySQL: type "exit". On terminal: Run "node index.js" to seed database. Run "npm start" to start server. "ctrl c" to stop server. Open the downloaded app Insomia Core to test database.
+  Go to MySQL shell CLI: run "mysql -u root -p". type "source schema.sql;" to create db. Exit MySQL: type "exit". On terminal: Run "npm run seed" to seed database. Run "npm start" to start server. "ctrl c" to stop server. Open the downloaded app Insomia Core to test database.
+  
+  
+  Walkthrough Videos:
+  MySQL source schema  https://drive.google.com/file/d/1d7HtrDMGLMAchobzyvk19R0sS7W21ddh/view
+  npm run seed and npm start https://drive.google.com/file/d/1LkbkD6Q6UUZlYRQyERpsDgRyq2SXWW22/view
+  Insomia Core testing https://drive.google.com/file/d/10dcq5wCVnAP3fFMi6fJQXnh2HZvPufRS/view
 
   ## *Credits*
    

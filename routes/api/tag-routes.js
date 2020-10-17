@@ -15,9 +15,7 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   Tag.findOne({
-    include: [Product]
-  },
-  {
+    include: [Product],
     where: {
       id: req.params.id
     }
@@ -32,8 +30,8 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  Category.create({
-    tag: req.body.tag_name
+  Tag.create({
+    tag_name: req.body.tag_name
   }).then(dbTag => {
     res.json(dbTag);
   }).catch(err => {
@@ -44,7 +42,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   Tag.update({
-    tag: req.body.tag_name
+    tag_name: req.body.tag_name
   },
   {
     where: {

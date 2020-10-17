@@ -17,9 +17,7 @@ router.get('/', (req, res) => {
 // get one product
 router.get('/:id', (req, res) => {
   Product.findOne({
-    include: [Category, Tag]
-  },
-  {
+    include: [Category, Tag],
     where: {
       id: req.params.id
     }
@@ -47,9 +45,8 @@ router.post('/', (req, res) => {
     product_name: req.body.product_name,
     price: req.body.price,
     stock: req.body.stock,
-    tagIds: {
-      tag_id: req.body.tag_id
-    }
+    tagIds: req.body.tagId
+    
   })
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model

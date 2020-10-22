@@ -53,6 +53,7 @@
   ## *Badges*
 
   ![alt text](https://img.shields.io/badge/license-Boost_Software_License_1.0-blueviolet?style=for-the-badge&logo=appveyor "license badge")
+  ![alt text](https://img.shields.io/badge/Javascript-blueviolet?style=for-the-badge&logo=appveyor "license badge")
 
   ## *Contributing*
    
